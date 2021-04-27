@@ -1,0 +1,20 @@
+
+
+.about {
+    background-color: transparent;
+    font-size: 1.1em;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+  }
+ #heading{
+    color: #424642;
+    letter-spacing: 1px;
+  }
+  
+  .profile {
+    max-width: 18em;
+  }
+  
+  .my-details {
+    background-color: rgba(255, 255, 255, 0.747);
+  }

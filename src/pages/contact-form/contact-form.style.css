@@ -1,0 +1,19 @@
+.insta{
+    color: #f21170;
+    border-color: #f21170;
+    
+}
+
+.insta:hover{
+    background-color: #f21170;
+    color: #fff;
+}
+
+.contact{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+.contact-jumbotron{
+    
+}
