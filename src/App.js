@@ -15,6 +15,7 @@ import ProjectTimeline from './components/projects-timeline/projects-timeline.co
 import Contact from './pages/contact-form/contact-form.component.jsx'
 // import {particleOptions} from './ParticleOptions';
 
+
 import Footer from './components/Footer/footer.component.jsx'
 const App =()=> {
   return (
@@ -42,6 +43,7 @@ const App =()=> {
         </Parallax>
       </div>
       <hr />
+
         <div>
         <Parallax bgImage={BgIm4} strength={500}>
           <div>
