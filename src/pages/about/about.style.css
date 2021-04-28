@@ -3,8 +3,9 @@
 .about {
     background-color: transparent;
     font-size: 1.1em;
-    /* font-family: 'Ubuntu', sans-serif; */
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
   }
  #heading{
     color: #424642;
