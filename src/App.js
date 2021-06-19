@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from "react-reveal/Fade"; 
 import './App.css';
-import MyNavbar from './components/my-navbar/mynavbar.style.jsx';
+import MyNavbar from './components/my-navbar/mynavbar.component.jsx';
 import MyCarousal from './components/my-carousal/my-carousal.component.jsx';
 import TitleMessage from './components/title-msg/title-msg.component.jsx';
 import About from './pages/about/about.component'
@@ -11,12 +11,9 @@ import Container from "react-bootstrap/Container";
 import {Parallax} from "react-parallax";
 import Skills from './pages/skills/skills.component.jsx'
 import ProjectTimeline from './components/projects-timeline/projects-timeline.component';
-// import Particles from 'react-particles-js'
 import Contact from './pages/contact-form/contact-form.component.jsx'
-// import {particleOptions} from './ParticleOptions';
-
-
 import Footer from './components/Footer/footer.component.jsx'
+
 const App =()=> {
   return (
     

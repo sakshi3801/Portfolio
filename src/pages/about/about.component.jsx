@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import sakshi1 from '../../assets/img/profile/sakshi1.webp'
+import sakshi from '../../assets/img/profile/sakshi2.jpg'
 import './about.style.css'
 import Button from "react-bootstrap/Button";
 
@@ -17,13 +17,14 @@ const About = ()=>{
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
               <Row className="justify-content-center mb-2 mr-2 ">
-                <Image className="sakshi1 justify-content-end" alt="profile" src={sakshi1} thumbnail fluid />
+                <Image className="sakshi justify-content-end" alt="profile" src={sakshi} thumbnail fluid/>
               </Row>
             </Col>
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
                 Hi there! I am <strong>&nbsp;Sakshi Ramsinghani</strong>
-                <br />A computer science undergraduate at Indian Institute of Information Technology Pune. I'm a front end web developer having good grasp over React JS, Javascript, HTML and CSS.
+                <br />A computer science undergraduate at Indian Institute of Information Technology Pune. I'm a front-end web developer having good grasp over React JS, Javascript, HTML5 and CSS3.
+                I'm also exploring the back-end technologies like Node.js and Express.
                 <br />
                 I possess good problem solving skills. I am well versed with data structures and algorithms and I enjoy solving challenging algorithmic problems.
                 <br />
@@ -40,7 +41,7 @@ const About = ()=>{
                     </a>
                   </div>
                   <div>
-                    <a href="https://drive.google.com/file/d/1pnoOYLjPnieYsUL299HanaQs3ARfimbM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1Gl-JP2Ze83LMxJkWdVyd0DoPpFSKPOo0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                       <Button className="m-2" variant="outline-success">
                         My Resume
                       </Button>

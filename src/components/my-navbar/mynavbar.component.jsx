@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Logo from "../../assets/icons/logow.webp";
-import './mynavbar.component.css';
+import './mynavbar.style.css';
+import Scroll from 'react-scroll'
+const ScrollLink = Scroll.ScrollLink
 
 const MyNavbar = ()=>{
     return(
@@ -15,11 +16,12 @@ const MyNavbar = ()=>{
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link className='navlink' href="#features">Home</Nav.Link>
-      <Nav.Link className='navlink' href="#pricing">About</Nav.Link>
-      <Nav.Link className='navlink' href="#pricing">Skills</Nav.Link>
-      <Nav.Link className='navlink' href="#pricing">Projects</Nav.Link>
-      <Nav.Link className='navlink' href="#pricing">Contact</Nav.Link>
+    
+      <Nav.Link className='navlink' href="#home">Home</Nav.Link>
+      <Nav.Link className='navlink' href='#about'>About</Nav.Link>
+      <Nav.Link className='navlink' href='#skills'>Skills</Nav.Link>
+      <Nav.Link className='navlink' href="#projects">Projects</Nav.Link>
+      <Nav.Link className='navlink' href="#contact">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
@@ -28,7 +30,3 @@ const MyNavbar = ()=>{
 };
 
 export default MyNavbar;
-{/* <Navbar.Brand href="#home" className='brand' >
-      
-      <a href="" className='brand'>Sa.Ra.</a>
-  </Navbar.Brand> */}

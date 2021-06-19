@@ -1,17 +1,18 @@
 import React from 'react'
 import {Timeline,Events,UrlButton,ImageEvent} from '@merc/react-timeline';
-
-import Attendance from '../../assets/img/projects/proj1.webp'
-import TODO from '../../assets/img/projects/proj2.webp'
+import TODO from '../../assets/img/projects/todo.png'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import L_PYTHON from "../../assets/img/skills/python.svg";
-import L_OPENCV from "../../assets/img/skills/opencv.svg";
+import L_REACT from "../../assets/img/skills/react.svg";
+import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
+import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import Image from 'react-bootstrap/Image'
-import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
+import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
-import L_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
+import Tuneify from '../../assets/img/projects/Tuneify.jpg'
+import PORTFOLIO from '../../assets/img/projects/portfolio.png'
+
 
 import './projects-timeline.style.css';
 
@@ -24,13 +25,13 @@ const ProjectTimeline = ()=>{
         <h1 className="pt-3 text-center font-details-b pb-3 projects">PROJECTS</h1>   
         <Timeline>
         <Events>
-        {/* Project: Attendace System */}
+        {/* Project: Tuneify */}
         <ImageEvent
-            date="December 2020"
+            date="May 2021"
             className="text-center titles"
-            text="Online Attendance System"
-            src={Attendance}
-            alt="Online Attendance System">
+            text="Tuneify"
+            src={Tuneify}
+            alt="Tuneify">
 
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -45,14 +46,15 @@ const ProjectTimeline = ()=>{
                     </Accordion.Toggle> 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a face recognition based attendance system developed using Python.
+                        <strong>Description:</strong> This is a background noise generator designed to help people relax, focus, and tune out unpleasant sounds from your environment.
+.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Marks attentance of employee using his/her facial biometrics.</li>
-                          <li>Developed using OpenCV library in Python.</li>
-                          <li>Uses Haarcascade classifiers for detecting faces and LBPH algorithms for training the model</li>
-                          <li>GUI implemented using Tkinter module.</li>
+                          <li>Generates soothing and peaceful background sounds, hence enhancing one's productivity.</li>
+                          <li>Provides various categories of sounds including Nature, Weather, etc</li>
+                          <li>Built using React JS, React Router, HTML5 and CSS3.</li>
+                          <li>React Bootstrap and Material UI to implement the beautiful user interface.</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -60,41 +62,78 @@ const ProjectTimeline = ()=>{
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_PYTHON}
-                                alt="Python"
+                                src={L_REACT}
+                                alt="React JS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              Python
+                              React JS
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_OPENCV}
-                                alt="OpenCV"
+                                src={L_REACT_ROUTER}
+                                alt="React Router"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              OpenCV
+                              React Router
                             </span>
                           </li>
-                          
-                          
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT_BOOTSTRAP}
+                                alt="React Bootstrap"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React Bootstrap
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
                         </ul>
+
+                        
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
               </div>
-              <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton className = 'urlBtn' href="https://github.com/sakshi3801/Attendance-System" target="_blank">SOURCE CODE</UrlButton>
+              <div className="d-flex justify-content-between flex-nowrap text-center" id='proj'>
+                <UrlButton className = 'urlBtn' href="https://tuneifyapp.herokuapp.com/" target="_blank">SEE LIVE</UrlButton>
+            
+                <UrlButton className = 'urlBtn' href="https://github.com/sakshi3801/Tuneify" target="_blank">SOURCE CODE</UrlButton>
               </div>
             </div>
+
+            
           </ImageEvent>
 
           <ImageEvent
-            date="March 2021"
+            date="April 2021"
             className="text-center titles"
             text="TODOs List"
             src={TODO}
@@ -119,12 +158,34 @@ const ProjectTimeline = ()=>{
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Keeps track of your TODOs.</li>
-                          <li>Developed using JavaScript, HTML5, CSS3 and Bootstrap.</li>
+                          <li>Developed using React JS, HTML5, CSS3 and React Bootstrap.</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
+                        <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React JS"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React JS
+                            </span>
+                          </li>
                           <li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT_BOOTSTRAP}
+                                alt="React Bootstrap"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React Bootstrap
+                            </span>
+                          </li>
                             <span className="p-2">
                               <Image
                                 src={L_HTML5}
@@ -146,26 +207,104 @@ const ProjectTimeline = ()=>{
                               CSS3
                             </span>
                           </li>
-                          <li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+              <UrlButton className = 'urlBtn' href="https://react-todos-list.herokuapp.com/" target="_blank">SEE LIVE</UrlButton>
+                <UrlButton
+                  href="https://github.com/sakshi3801/React-TODOs-List" target="_blank">
+                  SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+          <ImageEvent
+            date="April 2021"
+            className="text-center titles"
+            text="Portfolio"
+            src={PORTFOLIO}
+            alt="Portfolio"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is my portfolio website.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Developed using React JS, HTML5, CSS3, React Bootstrap and Styled Components.</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                        <li>
                             <span className="p-2">
                               <Image
-                                src={L_JAVASCRIPT}
-                                alt="CSS"
+                                src={L_REACT}
+                                alt="React JS"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              JavaScript
+                              React JS
+                            </span>
+                          </li>
+                          <li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT_BOOTSTRAP}
+                                alt="React Bootstrap"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React Bootstrap
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_BOOTSTRAP}
-                                alt="Bootstrap"
+                                src={L_STYLED_COMPONENTS}
+                                alt="Styled Components"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              Bootstrap
+                              Styled Components
+                            </span>
+                          </li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
                             </span>
                           </li>
                         </ul>
@@ -175,16 +314,14 @@ const ProjectTimeline = ()=>{
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-        
+              <UrlButton className = 'urlBtn' href="https://react-todos-list.herokuapp.com/" target="_blank">SEE LIVE</UrlButton>
                 <UrlButton
-                  href="https://github.com/sakshi3801/NoteIt"
-                  target="_blank"
-                >
+                  href="https://github.com/sakshi3801/portfolio" target="_blank">
                   SOURCE CODE
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>         
+          </ImageEvent>           
           </Events>
           </Timeline>
           </div>
